@@ -26,7 +26,7 @@ HTTP Endpoint <-> Middleware <-> Controller <-> Services <-> Database
 └─── package.json 
 ```
 ## Step By Step - Instructions 
-### Please go to the config folder inside the backend folder `(./backend/config)` and update the `default.ts` & `test.ts` with the `dbUri` of `MongoDB (main database)` & the `cacheUri` of `Redis (Cache)`.
+### Please go to the config folder inside the backend folder `(./backend/config)` and update the `default.ts` & `test.ts` with the `dbUri` of `MongoDB (main database)` & the `cacheUri` of `Redis (Cache)`. Again update `publicKey, privateKey, googleClientId & googleClientSecret` with your one in both files.
 
 ### Installation
 Install the dependencies from the root directory of the project.
