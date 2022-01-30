@@ -1,0 +1,21 @@
+{
+  "name": "rest_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Osman",
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-dep": "(npm install) && (npm run install-backend) && (npm run install-frontend)",
+    "dev-backend": "cd backend && npm run dev",
+    "dev-frontend": "cd frontend && npm run dev",
+    "dev": "concurrently -k \"npm:dev-backend\" \"npm:dev-frontend\"",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
